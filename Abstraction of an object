@@ -6,27 +6,38 @@ It focuses mainly on what an object does rather than how it does it.It allows pa
 
 package selenium;
 
-abstract class Abstractchild{
-abstract void add(int a, int b);
+abstract class Areacalculation{
+abstract void circle(int r);
+abstract void sphere(int r);
 }
 
-public class Abstractionpractise extends Abstractchild {
+
+public class Abstractionpractise extends Areacalculation{
 	
-	int a,b;
+	int r;
 	public static void main(String []Args) {
 		
 		Abstractionpractise object = new Abstractionpractise();
-		object.add(5,10);
-		
+		object.circle(5);
+        object.sphere(10);		
 	}
 
 
 	@Override
-	void add(int a, int b) {
+	void circle(int r) {
 		// TODO Auto-generated method stub
 		
-		int sum = a+b;
-		System.out.println("This is the addition from abstract class "+" "+sum);
+		int circlearea = 3.14*r*r;
+		System.out.println("This is the Circle Area from abstract class "+" "+circlearea);
+	
+		
+	}
+@Override
+	void sphere(int r) {
+		// TODO Auto-generated method stub
+		
+		int sphere_area = 4*3.14*r*r;
+		System.out.println("This is the Sphere Area from abstract class "+" "+Sphere_area);
 	
 		
 	}
