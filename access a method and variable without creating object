@@ -1,0 +1,34 @@
+we can access a method and variable without creating object by adding Static keyword in the method.
+
+Step 1:
+Create a Parent class (below example:consider "Addition")
+
+step 2:Create a method with keyword static.
+
+step 3:Create the Main class and Main method.
+
+step 4:Now Enter the Parentclass.methodname.(In the below example enter Parentclass.method)
+
+Sample Program:
+----------------
+
+package selenium;
+
+class Addition{
+
+static void add(int a , int b){
+
+int sum =  a +  b;
+
+}
+}
+
+public class Statickeyword{
+
+public static void main(String[]Args){
+
+Addition.add(10, 15);
+
+}
+}
+
