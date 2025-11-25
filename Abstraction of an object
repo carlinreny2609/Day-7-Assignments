@@ -1,0 +1,34 @@
+Abstraction:
+
+Abstraction is used to hide the implementation details of an object.
+It focuses mainly on what an object does rather than how it does it.It allows partial abraction
+
+
+package selenium;
+
+abstract class Abstractchild{
+abstract void add(int a, int b);
+}
+
+public class Abstractionpractise extends Abstractchild {
+	
+	int a,b;
+	public static void main(String []Args) {
+		
+		Abstractionpractise object = new Abstractionpractise();
+		object.add(5,10);
+		
+	}
+
+
+	@Override
+	void add(int a, int b) {
+		// TODO Auto-generated method stub
+		
+		int sum = a+b;
+		System.out.println("This is the addition from abstract class "+" "+sum);
+	
+		
+	}
+
+}
