@@ -1,0 +1,41 @@
+//interface file
+
+interface Fourwheeler {
+ void Start();   // abstract method
+ void Break();   // abstract method
+}
+//class implementing the interface:
+
+class Car implements Fourwheeler {
+    @Override
+    public void Start() {
+        System.out.println("Car starts:!");
+    }
+    @Override
+    public void Break() {
+        System.out.println("Car Breaks...");
+    }
+ }
+ // Another class implementing the interface
+ class Truck implements Fourwheeler {
+    @Override
+    public void Start() {
+    
+        System.out.println("Truck starts!");
+    }
+    @Override
+    public void Break() {
+        System.out.println("Truck Breaks...");
+    }
+ }
+ // Main class
+ public class interfacepractise {
+    public static void main(String[] args) {
+        Fourwheeler car = new Car();
+        car.Start();  
+        car.Break();  
+        Fourwheeler Truck = new Truck();
+        Truck.Start();  
+        Truck.Break();  
+        }
+ }
